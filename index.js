@@ -22,9 +22,19 @@ let maleStat = new Stat("male", 91.7)
 let femaleStat = new Stat("female", 7.9)
 let nonBStat = new Stat("non-binary", 1.2)
 
+let maleStatComp = new Stat("male-comp", 67.7)
+let nonBStatComp = new Stat("nonb-comp", 59.1)
+let femaleStatComp = new Stat("female-comp", 53.4)
+
+
 maleStat.makeWider()
 femaleStat.makeWider()
 nonBStat.makeWider()
+
+maleStatComp.makeWider()
+nonBStatComp.makeWider()
+femaleStatComp.makeWider()
+
 
 
 

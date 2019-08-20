@@ -1,5 +1,27 @@
+@font-face{
+  font-family: "Lato";
+  src: url(Lato-Regular.ttf)
+}
 body{
-  font-family: cursive;
+  font-family: "Lato";
+  font-size: 14pt;
+  color: #232323;
+  background: rgb(223,229,242);
+  background: linear-gradient(45deg, #dfe5f2 0%, rgba(186,199,228,1) 50%, rgba(86,178,222,1) 100%); 
+}
+
+@media only screen and (max-width: 768px){
+  body {font-size: 10pt;}
+}
+h1{
+  font-size: 2em;
+}
+h2{
+  font-size: 1.5em;
+}
+a{
+  text-decoration: none;
+  color: hsl(32, 81%, 30%);
 }
 header{
   display: flex;
@@ -14,16 +36,20 @@ main{
   margin-right: 2em;
 }
 .chart{
-    
-  
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 10fr;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #232323;
 }
 .stat{
   height: 5em;
-  background: pink;
+  background: #EC9F48;
   margin-bottom: 1em;
   display: flex;
   align-items: center;
-
+  border-radius: 0.5em;
 }
 .stat > p{
   margin-left: 1em;
