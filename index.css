@@ -1,0 +1,25 @@
+body{
+  font-family: cursive;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#kip-pic{
+  max-width: 15%;
+}
+main{
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.chart{
+    
+  
+}
+.stat{
+  width: 1em;
+  height: 5em;
+  background: pink;
+  margin-bottom: 1em;
+}
