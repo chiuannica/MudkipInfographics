@@ -18,8 +18,13 @@ main{
   
 }
 .stat{
-  width: 1em;
   height: 5em;
   background: pink;
   margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+
+}
+.stat > p{
+  margin-left: 1em;
 }
