@@ -5,9 +5,8 @@
 body{
   font-family: "Lato";
   font-size: 14pt;
-  color: #232323;
-  background: rgb(223,229,242);
-  background: linear-gradient(45deg, #dfe5f2 0%, rgba(186,199,228,1) 50%, rgba(86,178,222,1) 100%); 
+  color: hsl(221, 42%, 20%);
+  background: #f0b674;
 }
 
 @media only screen and (max-width: 768px){
@@ -22,15 +21,12 @@ h2{
 a{
   text-decoration: none;
   color: hsl(32, 81%, 30%);
+  border-bottom: 1px transparent solid;
+  transition: border-bottom 1s ease-in-out;
 }
 a:hover{
-  animation-name: underline;
-  animation-duration: 1s;
-  border-bottom: 1px #333 solid;
-}
-@keyframes underline{
-  from {border-bottom: 1px transparent solid;}
-  to {border-bottom: 1px #333 solid;}
+  border-bottom: 1px solid;
+  transition: border-bottom 1s ease-in-out;
 }
 header{
   display: flex;
@@ -50,7 +46,12 @@ main{
   grid-template-columns: 1fr 10fr;
   align-items: center;
   text-align: center;
-  background-color: #eeeeee;
+  background: linear-gradient(45deg, #dfe5f2 0%, rgba(186,199,228,1) 50%, rgba(86,178,222,1) 100%); 
+  padding: 1em;
+  border-radius: 1em;
+}
+.circle-chart{
+  background: linear-gradient(45deg, #dfe5f2 0%, rgba(186,199,228,1) 50%, rgba(86,178,222,1) 100%); 
   padding: 1em;
   border-radius: 1em;
 }
@@ -61,20 +62,16 @@ main{
   display: flex;
   align-items: center;
   border-radius: 0.5em;
+  transition: background-color 1s;
 }
 .stat:hover{
-  background: hsl(32, 81%, 50%);
-  animation-name: darker-orange;
-  animation-duration: 1s;
+  background: rgba(236, 159, 72, 0.4);
+  transition: background-color 1s;
 }
-@keyframes darker-orange{
-  from {background: #EC9F48;}
-  to {background: hsl(32, 81%, 50%);}
-}
-.stat > p{
-  margin-left: 1em;
+.stat-percent{
+  margin-left: 1.5em;
 }
 figcaption{
   margin-top: 1em;
-  border-top: 1px solid #232323;
+  border-top: 1px solid ;
 }
